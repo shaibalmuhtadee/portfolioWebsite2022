@@ -16,11 +16,11 @@ const darkmodeButton = () => {
 
    if (currentTheme === "dark") {
       return (
-         <BsFillSunFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer text-highlight bg-dark_secondary rounded-xl' role="button" onClick={() => setTheme('light')}/>
+         <BsFillSunFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer text-light_primary bg-dark_secondary rounded-xl' role="button" onClick={() => setTheme('light')}/>
       )
    } else {
       return (
-         <BsFillMoonFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer text-highlight bg-dark_secondary rounded-xl' role="button" onClick={() => setTheme('dark')} />
+         <BsFillMoonFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer drop-shadow-2xl text-dark_primary bg-light_secondary rounded-xl' role="button" onClick={() => setTheme('dark')} />
       )
    }
 }

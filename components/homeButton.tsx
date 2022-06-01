@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 
-const homeButton = ({color, width}) => {
+const homeButton = () => {
+
+   const [mounted, setMounted] = useState(false);
+
+   useEffect(() =>{
+      setMounted(true);
+   },[])
+
+   if(!mounted) return null;
+
+   const {systemTheme, theme, setTheme} =  useTheme()
+   const currentTheme = theme === "system" ? systemTheme : theme;
+
+   var color = '#001429'
+   var width = 'w-12'
+
+   if (currentTheme === "dark") {
+      color = '#F2F7F2'
+   }
+   
    return (
       <a href="/">
          <svg className={width} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.12 241.51">
