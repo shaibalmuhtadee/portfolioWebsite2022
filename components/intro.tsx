@@ -2,7 +2,7 @@ import React from 'react'
 
 const intro = () => {
    return (
-      <div className='flex w-screen h-screen text-white bg-gray-600'>
+      <div className='text-black dark:text-light_primary'>
          <h1>intro</h1>
       </div>
    )
