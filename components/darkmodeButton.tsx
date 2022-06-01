@@ -13,7 +13,7 @@ const darkmodeButton = () => {
    
    const {systemTheme, theme, setTheme} =  useTheme()
    const currentTheme = theme === "system" ? systemTheme : theme;
-   
+
    function toggleDarkmode(mode) {
       setTheme(mode);
       if (mode === 'dark') {
@@ -23,15 +23,17 @@ const darkmodeButton = () => {
       }
    }
    
+   toggleDarkmode(currentTheme)
+
    if (currentTheme === "dark") {
       return (
-         <button className='flex items-center justify-center text-xl transition duration-150 ease-in-out transform rounded-md shadow cursor-pointer bg-opacity-90 w-9 h-9 hover:translate-y-px hover:bg-opacity-100 hover:shadow-md bg-dark_secondary'onClick={() => toggleDarkmode('light')}>
+         <button className='flex items-center justify-center text-3xl transition duration-150 ease-in-out transform rounded-md shadow cursor-pointer focus:outline bg-opacity-90 w-14 h-14 hover:translate-y-px hover:bg-opacity-100 hover:shadow-md bg-dark_secondary'onClick={() => toggleDarkmode('light')}>
             <BsSunFill />
          </button>
       )
    } else {
       return (
-         <button className='flex items-center justify-center text-xl transition duration-150 ease-in-out transform bg-opacity-100 rounded-md shadow cursor-pointer w-9 h-9 hover:translate-y-px hover:bg-opacity-90 hover:shadow-md bg-light_secondary' onClick={() => toggleDarkmode('dark')}>
+         <button className='flex items-center justify-center text-3xl transition duration-150 ease-in-out transform bg-opacity-100 rounded-md shadow cursor-pointer focus:outline w-14 h-14 hover:translate-y-px hover:bg-opacity-90 hover:shadow-md bg-light_secondary' onClick={() => toggleDarkmode('dark')}>
             <BsMoonFill />
          </button>
       )

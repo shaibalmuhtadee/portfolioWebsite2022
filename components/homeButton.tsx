@@ -15,7 +15,7 @@ const homeButton = () => {
    const currentTheme = theme === "system" ? systemTheme : theme;
 
    var color = '#001429'
-   var width = 'w-10'
+   var width = 'w-16'
 
    if (currentTheme === "dark") {
       color = '#F2F7F2'
