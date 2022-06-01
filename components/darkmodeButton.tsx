@@ -1,4 +1,4 @@
-import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs'
+import { BsMoonFill, BsSunFill } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
@@ -16,11 +16,15 @@ const darkmodeButton = () => {
 
    if (currentTheme === "dark") {
       return (
-         <BsFillSunFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer text-light_primary bg-dark_secondary rounded-xl' role="button" onClick={() => setTheme('light')}/>
+         <button className='flex items-center justify-center w-12 h-12 text-2xl transition duration-150 ease-in-out transform rounded-md shadow cursor-pointer hover:translate-y-px bg-opacity-80 hover:bg-opacity-100 hover:shadow-md bg-dark_secondary' onClick={() => setTheme('light')}>
+            <BsSunFill />
+         </button>
       )
    } else {
       return (
-         <BsFillMoonFill className='flex items-center justify-center w-12 h-12 p-2 text-2xl cursor-pointer drop-shadow-2xl text-dark_primary bg-light_secondary rounded-xl' role="button" onClick={() => setTheme('dark')} />
+         <button className='flex items-center justify-center w-12 h-12 text-2xl transition duration-150 ease-in-out transform bg-opacity-100 rounded-md shadow cursor-pointer hover:translate-y-px hover:bg-opacity-90 hover:shadow-md bg-light_secondary' onClick={() => setTheme('dark')}>
+            <BsMoonFill />
+         </button>
       )
    }
 }
