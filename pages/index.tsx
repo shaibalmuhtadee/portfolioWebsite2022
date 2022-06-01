@@ -4,7 +4,7 @@ import Intro from '../components/intro'
 
 const index = () => {
   return (
-    <div className='grid w-full max-w-4xl grid-rows-2 m-auto md:max-w-3xl'>
+    <div className='max-w-3xl m-auto space-y-4'>
       <Header />
       <Intro />
     </div>
