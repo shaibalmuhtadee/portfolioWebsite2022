@@ -40,7 +40,7 @@ const header = () => {
             <HomeButton/>
 
             <div onClick={() => setOpen(!open)} className='absolute text-3xl cursor-pointer right-8 top-6 md:hidden'>
-               <MenuButton name={open ? 'CloseButton':'MenuButton'} />
+               {open ? <CloseButton /> : <MenuButton />}
             </div>
 
             <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-light_primary dark:bg-dark_primary transition-top duration-500 ease-in md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? 'top-20 ':'top-[-170px] transition-opacity duration-700 opacity-0 md:opacity-100'}`}>
@@ -49,6 +49,7 @@ const header = () => {
                <li key={'contact'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>Contact</span></a></li>
                <li className='md:px-5'><DarkmodeButton /></li>
             </ul>
+            
          </div>
       </nav>
    )
