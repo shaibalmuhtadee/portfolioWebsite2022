@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import HomeButton from './homeButton'
 import DarkmodeButton from './darkmodeButton'
+import MenuButton from './menuButton'
+import CloseButton from './closeButton'
 
 function useScrollDirection() {
    const [scrollDirection, setScrollDirection] = useState(null);
@@ -26,21 +28,30 @@ function useScrollDirection() {
 };
 
 const header = () => {
+   
    const scrollDirection = useScrollDirection();
+
+   let [open,setOpen] = useState(false)
+   
    return (
-      <div className={`sticky ${ scrollDirection === "down" ? "-top-40" : "top-0"} transition-all duration-500 flex items-center justify-between pt-12 pb-6 bg-light_primary/80 dark:bg-dark_primary/80 backdrop-blur-sm`}>
-         <HomeButton />
-         <div className='flex items-center justify-end'>
-            <DarkmodeButton />
+      <nav className={`sticky ${ scrollDirection === "down" ? "-top-40" : "top-0"} w-full transition-top duration-500 ease-in-out bg-light_primary dark:bg-dark_primary md:bg-opacity-80 md:backdrop-blur-sm backdrop-blur-none`}>
+         <div className='items-center justify-between py-4 md:flex md:px-10 px-7'>
 
-            <button className='pl-5 pr-3 text-lg font-medium uppercase'><span className='link-underline link-underline-dark'>About</span></button>
-            <button className='px-3 text-lg font-medium uppercase'><span className='link-underline link-underline-dark'>Projects</span></button>
-            <button className='px-3 text-lg font-medium uppercase'><span className='link-underline link-underline-dark'>Contact</span></button>
+            <HomeButton/>
 
+            <div onClick={() => setOpen(!open)} className='absolute text-3xl cursor-pointer right-8 top-6 md:hidden'>
+               <MenuButton name={open ? 'CloseButton':'MenuButton'} />
+            </div>
+
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-light_primary dark:bg-dark_primary transition-top duration-500 ease-in md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? 'top-20 ':'top-[-170px] transition-opacity duration-700 opacity-0 md:opacity-100'}`}>
+               <li key={'about'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>About</span></a></li>
+               <li key={'projects'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>Projects</span></a></li>
+               <li key={'contact'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>Contact</span></a></li>
+               <li className='md:px-5'><DarkmodeButton /></li>
+            </ul>
          </div>
-      </div>
+      </nav>
    )
 }
 
 export default header
-
