@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../components/header'
-import Intro from '../components/intro'
+import Header from '../components/header/header'
+import Intro from '../components/intro/intro'
 
 const index = () => {
   return (

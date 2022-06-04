@@ -27,13 +27,13 @@ const darkmodeButton = () => {
 
    if (currentTheme === "dark") {
       return (
-         <button className='flex items-center justify-center w-12 h-12 text-4xl transition duration-150 ease-in-out transform rounded-md shadow hover:translate-y-px focus:outline dark:bg-dark_secondary bg-light_secondary text-dark_primary dark:text-light_primary' onClick={() => toggleDarkmode('light')}>
+         <button className='flex items-center justify-center w-12 h-12 text-3xl transition-transform duration-150 rounded-md shadow hover:outline hover:scale-105 focus:outline dark:bg-dark_secondary bg-light_secondary text-dark_primary dark:text-light_primary' onClick={() => toggleDarkmode('light')}>
             <BsSunFill />
          </button>
       )
    } else {
       return (
-         <button className='flex items-center justify-center w-12 h-12 text-4xl transition duration-150 ease-in-out transform rounded-md shadow hover:translate-y-px focus:outline dark:bg-dark_secondary bg-light_secondary text-dark_primary dark:text-light_primary' onClick={() => toggleDarkmode('dark')}>
+         <button className='flex items-center justify-center w-12 h-12 text-3xl transition-transform duration-150 rounded-md shadow hover:outline hover:scale-105 focus:outline dark:bg-dark_secondary bg-light_secondary text-dark_primary dark:text-light_primary' onClick={() => toggleDarkmode('dark')}>
             <BsMoonFill />
          </button>
       )

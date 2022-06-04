@@ -43,11 +43,11 @@ const header = () => {
                {open ? <CloseButton /> : <MenuButton />}
             </div>
 
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-light_primary dark:bg-dark_primary transition-top duration-500 ease-in md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? 'top-20 ':'top-[-170px] transition-opacity duration-700 opacity-0 md:opacity-100'}`}>
-               <li key={'about'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>About</span></a></li>
-               <li key={'projects'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>Projects</span></a></li>
-               <li key={'contact'} className='text-xl md:ml-8 md:my-0 my-7'><a href='/'><span className='link-underline link-underline-dark'>Contact</span></a></li>
-               <li className='md:px-5'><DarkmodeButton /></li>
+            <ul className={`md:flex md:items-center md:pb-0 bg-light_primary dark:bg-dark_primary pb-12 absolute md:static transition-top duration-500 ease-in md:z-auto z-[-1] left-0 w-full md:w-auto  pl-7 ${open ? 'top-20 ':'top-[-170px] transition-opacity duration-700 opacity-0 md:opacity-100'}`}>
+               <li className='w-12 text-xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><a href='/' title='About' className='hover:font-semibold'><span className='link-underline link-underline-dark'>About</span></a></li>
+               <li className='w-12 text-xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><a href='/' title='Projects' className='hover:font-semibold'><span className='link-underline link-underline-dark'>Projects</span></a></li>
+               <li className='w-12 text-xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><a href='/' title='Contact' className='hover:font-semibold'><span className='link-underline link-underline-dark'>Contact</span></a></li>
+               <li className='md:px-5 pt-7 md:py-0'><DarkmodeButton /></li>
             </ul>
             
          </div>
