@@ -4,6 +4,11 @@
 
 :root{
    --underline-color: #001429;
+   --underline-color-highlight: #F2F230;
+}
+
+html {
+   font-family: sans-serif;
 }
 
 .link-underline {
@@ -20,6 +25,10 @@
 
 .link-underline-dark {
    background-image: linear-gradient(transparent, transparent), linear-gradient(var(--underline-color, black), var(--underline-color, black))
+}
+
+.link-underline-highlight {
+   background-image: linear-gradient(transparent, transparent), linear-gradient(var(--underline-color-highlight, black), var(--underline-color-highlight, black))  
 }
 
 .link-underline:hover {
