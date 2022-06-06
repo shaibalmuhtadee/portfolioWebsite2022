@@ -2,17 +2,17 @@ import { BsMoonFill, BsSunFill } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
-const darkmodeButton = () => {
+const DarkmodeButton = () => {
    const [mounted, setMounted] = useState(false);
 
    useEffect(() =>{
       setMounted(true);
    },[])
    
-   if(!mounted) return null;
-   
    const {systemTheme, theme, setTheme} =  useTheme()
    const currentTheme = theme === "system" ? systemTheme : theme;
+
+   if(!mounted) return null;
 
    function toggleDarkmode(mode: string) {
       setTheme(mode);
@@ -42,4 +42,4 @@ const darkmodeButton = () => {
    }
 }
 
-export default darkmodeButton
+export default DarkmodeButton
