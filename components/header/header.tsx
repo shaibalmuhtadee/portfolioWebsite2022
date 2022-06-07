@@ -40,7 +40,7 @@ const Header = () => {
 
             <HomeButton />
 
-            <div onClick={() => setOpen(!open)} className='absolute pt-8 text-3xl rounded-md cursor-pointer right-8 top-6 md:hidden focus:outline'>
+            <div onClick={() => setOpen(!open)} className='absolute pt-8 text-3xl rounded-md cursor-pointer right-8 top-6 md:hidden focus:ring'>
                {open ? <CloseButton /> : <MenuButton />}
             </div>
 
@@ -48,7 +48,7 @@ const Header = () => {
                <li className='w-12 text-2xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><Link href="#intro"><a title='About' className='hover:font-semibold' onClick={() => setOpen(!open)}><span className='link-underline link-underline-dark'>About</span></a></Link></li>
                <li className='w-12 text-2xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><Link href="#projects"><a title='Projects' className='hover:font-semibold' onClick={() => setOpen(!open)}><span className='link-underline link-underline-dark'>Projects</span></a></Link></li>
                <li className='w-12 text-2xl duration-150 md:w-auto hover:scale-110 md:pl-8 md:py-0 pt-7'><a title='Contact' className='hover:font-semibold'><span className='link-underline link-underline-dark'>Contact</span></a></li>
-               <li className='md:px-5 pt-7 md:py-0'><div className='rounded-md focus:outline'><DarkmodeButton /></div></li>
+               <li className='md:px-5 pt-7 md:py-0'><DarkmodeButton /></li>
             </ul>
             
          </div>

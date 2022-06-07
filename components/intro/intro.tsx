@@ -8,7 +8,7 @@ const intro = () => {
    return (
       <div className='px-6 pt-4 text-black cursor-default dark:text-light_primary font-Rubik' id="intro">
          
-         <div className='rounded-full w-44 h-44 outline'>
+         <div className='rounded-full w-44 h-44 ring ring-black dark:ring-light_primary'>
             <img className='rounded-full w-44 h-44' src="/picture.gif" alt="author"/>
          </div>
 
