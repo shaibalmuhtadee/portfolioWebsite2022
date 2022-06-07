@@ -35,7 +35,7 @@ const Header = () => {
    let [open,setOpen] = useState(false)
    
    return (
-      <nav className={`sticky ${ scrollDirection === "down" ? "-top-40" : "top-0"} font-Rubik w-full transition-top pt-8 pb-4 duration-500 ease-in-out bg-light_primary dark:bg-dark_primary`}>
+      <nav className={`sticky ${ scrollDirection === "down" ? "-top-40" : "top-0 z-20"} font-Rubik w-full transition-top pt-8 pb-4 duration-500 ease-in-out bg-light_primary dark:bg-dark_primary`}>
          <div className='items-center justify-between py-4 md:flex md:px-10 px-7'>
 
             <HomeButton />

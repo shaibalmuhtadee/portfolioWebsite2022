@@ -6,13 +6,13 @@ import { GrMail } from "react-icons/gr";
 
 const intro = () => {
    return (
-      <div className='px-6 pt-4 text-black cursor-default dark:text-light_primary font-Rubik' id="intro">
+      <div className='px-6 pt-4 text-black cursor-default md:pt-24 dark:text-light_primary font-Rubik' id="intro">
          
-         <div className='rounded-full w-44 h-44 ring ring-black dark:ring-light_primary'>
-            <img className='rounded-full w-44 h-44' src="/picture.gif" alt="author"/>
+         <div className='rounded-full w-44 h-44 md:w-52 md:h-52 ring ring-black dark:ring-light_primary'>
+            <img className='rounded-full w-44 h-44 md:w-52 md:h-52' src="/picture.gif" alt="author"/>
          </div>
 
-         <h1 className='flex-wrap px-2 pt-8 pb-2 text-5xl font-bold md:flex'>Hi, I&apos;m Shai!&nbsp;<span className='inline-block'><Emoji symbol='👋' label='wave' /></span></h1>
+         <h1 className='flex-wrap px-2 pt-8 pb-2 text-5xl font-bold md:pt-12 md:flex'>Hi, I&apos;m Shai!&nbsp;<span className='inline-block'><Emoji symbol='👋' label='wave' /></span></h1>
       
          <h2 className='px-2 py-5 text-3xl font-bold md:text-4xl text-light_gray_custom dark:text-dark_gray_custom'>I am an aspiring web developer and computer engineering student at the University of Toronto seeking an internship this summer, check out my <span className='inline-block cursor-pointer dark:text-dark_highlight text-light_highlight link-underline link-underline-highlight'><a href=''>resume</a></span></h2>
          

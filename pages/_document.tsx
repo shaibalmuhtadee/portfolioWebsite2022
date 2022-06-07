@@ -4,11 +4,12 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
         <link rel="icon" type="image/png" href="/favicon/favicon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+        <script src='https://cdn-tailwindcss.vercel.app/'></script>
       </Head>
       <body className='bg-light_primary dark:bg-dark_primary'>
         <Main />
