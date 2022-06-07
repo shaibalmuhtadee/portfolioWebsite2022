@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d out -t true",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'shaibalmuhtadee.com' > ./out/CNAME",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
