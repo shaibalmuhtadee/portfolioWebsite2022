@@ -8,7 +8,7 @@ const nextConfig = {
     path: "",
   },
   assetPrefix: isProd ? "https://shaibalmuhtadee.com" : "",
-  basePath: isProd ? "/portfolioWebsite2022" : '',
+  basePath: isProd ? "/" : '',
 }
 
 module.exports = nextConfig
