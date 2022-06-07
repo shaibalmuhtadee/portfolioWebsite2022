@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
@@ -19,6 +19,11 @@ module.exports = {
         light_gray_custom: '#525A66',
         dark_highlight: '#F2F230',
         light_highlight: '#3185FC',
+        react_color: '#61DAFB',
+        typescript_color: '#3178C6',
+        graphql_color: '#E00097',
+        python_color: '#3670A0',
+        cplusplus_color: '#00589D'
       },
       keyframes: {
         wiggle: {
