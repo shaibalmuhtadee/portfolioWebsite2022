@@ -6,7 +6,7 @@ const nextConfig = {
     path: "",
   },
   assetPrefix: "/portfolioWebsite2022/",
-  BACKEND_URL: '/wallisconsultancy',
+  basePath: '/portfolioWebsite2022',
 }
 
 module.exports = nextConfig
