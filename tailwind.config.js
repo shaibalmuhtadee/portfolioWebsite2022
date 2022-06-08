@@ -23,7 +23,7 @@ module.exports = {
         typescript_color: '#3178C6',
         graphql_color: '#E00097',
         python_color: '#3670A0',
-        cplusplus_color: '#00589D'
+        cplusplus_color: '#00589D',
       },
       keyframes: {
         wiggle: {
