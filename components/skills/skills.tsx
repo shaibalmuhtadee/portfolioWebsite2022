@@ -20,7 +20,7 @@ const Skills = () => {
                   <div className='py-1 m-auto text-5xl w-min text-react_color'>
                      <SiReact className=''/>
                   </div>
-                  <span className='m-auto font-semibold text:md md:text-xl text-dark_secondary dark:text-light_secondary'>React</span>
+                  <span className='m-auto font-semibold w-min text:md md:text-xl text-dark_secondary dark:text-light_secondary'>React</span>
                </div>
             </div>
             <div className="items-center h-24 duration-200 ease-in-out rounded-md bg-light_secondary hover:-translate-y-1 translate-transform dark:bg-dark_secondary">3</div>
