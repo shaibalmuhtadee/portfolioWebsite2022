@@ -24,6 +24,8 @@ module.exports = {
         graphql_color: '#E00097',
         python_color: '#3670A0',
         cplusplus_color: '#00589D',
+        nodejs_color: '#026E00',
+        mongodb_color: '#419441',
       },
       keyframes: {
         wiggle: {
