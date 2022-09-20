@@ -16,7 +16,7 @@ const Projects = () => {
                transition={{ease: "easeInOut", duration: 0.5}} 
                className='w-full rounded-md -z-10 h-[22rem] drop-shadow-lg grid grid-cols-2'
             >
-               <motion.div whileHover={{y:-7, z:-1, transition: {duration: 0.2, ease: "easeInOut" }}} className='flex items-center justify-center w-full h-full col-span-1 text-center rounded-md cursor-pointer dark:bg-light_secondary bg-dark_secondary'>
+               <motion.div whileHover={{y:-7, z:-1, transition: {duration: 0.2, ease: "easeInOut" }}} className='flex items-center justify-center w-full h-full col-span-1 text-center rounded-md cursor-pointer dark:bg-light_primary bg-dark_primary'>
                   <img className='w-72 h-72' src="/music.png" alt="icon" />
                </motion.div>
                <div className='flex flex-col items-center justify-center w-full h-full col-span-1 text-right'>
