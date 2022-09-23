@@ -43,7 +43,7 @@ const Projects = () => {
                   <h1 className='pt-6 pb-2 pl-10 mr-auto text-4xl font-bold uppercase'>To Do app</h1>
                   <h2 className='pl-10 text-2xl font-extrabold text-light_gray_custom dark:text-dark_gray_custom'>CRUD App with User Authentication</h2>
                   <div className='z-50 text-[16px] flex items-center w-full p-4 mt-8 ml-20 text-left rounded-md shadow-xl text-light_gray_custom dark:text-dark_gray_custom h-26 bg-light_primary dark:bg-dark_primary'>
-                     <h1>Designd and built a to do list app using ReactJS and TailwindCSS. The app has Firebase user authentication and uses Firestore to manage data</h1>
+                     <h1>Designed and built a to do list app using ReactJS and TailwindCSS. The app has Firebase user authentication and uses Firestore to manage data</h1>
                   </div>
                   <div className='flex pb-4 mt-auto mr-auto space-x-2 text-xl text-light_gray_custom dark:text-dark_gray_custom pl-11'>
                      <h1>TypeScript</h1>
