@@ -6,7 +6,7 @@ import { SiTypescript, SiReact, SiGraphql, SiMongodb, SiPython } from "react-ico
 
 const Skills = () => {
    return (
-      <motion.div initial={{y: -50, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {duration: 0.75}}} className='px-6 pt-4 text-black cursor-default md:pt-12 dark:text-light_primary font-Rubik'> 
+      <motion.div initial={{y: -50, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {duration: 0.75}}} className='px-6 pt-12 text-black cursor-default dark:text-light_primary font-Rubik'> 
          <h2 className='px-2 py-5 text-4xl font-bold'>Skills</h2>
          <h3 className='px-2 pt-5 text-2xl font-semibold text-light_gray_custom dark:text-dark_gray_custom'>I am passionate about learning powerful and cutting-edge technologies. These are the tools I am most familiar with and use every day.</h3>
          <div className="grid max-w-md grid-cols-3 grid-rows-2 gap-6 px-2 py-8 overflow-hidden">
