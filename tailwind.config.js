@@ -26,6 +26,8 @@ module.exports = {
         cplusplus_color: '#00589D',
         nodejs_color: '#026E00',
         mongodb_color: '#419441',
+        rust_color: '#CE422B',
+        redis_color: '#D3544A'
       },
       keyframes: {
         wiggle: {

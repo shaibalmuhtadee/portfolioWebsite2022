@@ -39,7 +39,8 @@ const intro = () => {
         whileInView={{ y: 0, opacity: 1, transition: { duration: 0.75 } }}
         className="px-2 py-5 text-3xl font-bold md:text-4xl text-light_gray_custom dark:text-dark_gray_custom"
       >
-        I am an aspiring software engineer and ECE student at the{" "}
+        I am an aspiring software engineer and computer engineering student at
+        the{" "}
         <span className="inline-block cursor-pointer bg-light_highlight/40 dark:bg-dark_highlight/30 link-underline link-underline-highlight">
           <a href="https://www.utoronto.ca/">University of Toronto</a>
         </span>
@@ -91,24 +92,20 @@ const intro = () => {
         </h3>
         <h3 className="px-2 pt-5 text-2xl font-semibold text-light_gray_custom dark:text-dark_gray_custom">
           My technology stack includes:&nbsp;
-          <span className="inline-block transition-colors duration-200 ease-in hover:text-react_color">
-            React
+          <span className="inline-block transition-colors duration-200 ease-in hover:text-python_color">
+            Python
           </span>
           ,&nbsp;
           <span className="inline-block transition-colors duration-200 ease-in hover:text-typescript_color">
             TypeScript
           </span>
           ,&nbsp;
-          <span className="inline-block transition-colors duration-200 ease-in hover:text-graphql_color">
-            GraphQL
-          </span>
-          ,&nbsp;
-          <span className="inline-block transition-colors duration-200 ease-in hover:text-python_color">
-            Python
-          </span>
-          ,&nbsp;
           <span className="inline-block transition-colors duration-200 ease-in hover:text-cplusplus_color">
             C++
+          </span>
+          ,&nbsp;
+          <span className="inline-block transition-colors duration-200 ease-in hover:text-rust_color">
+            Rust
           </span>
         </h3>
       </motion.div>
