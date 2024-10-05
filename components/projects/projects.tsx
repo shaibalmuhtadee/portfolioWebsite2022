@@ -18,7 +18,7 @@ const Projects = () => {
         </h3>
       </motion.div>
       <div className="mx-2 pt-28 md:pt-12 space-y-36 md:space-y-14">
-        {/*Inventory Dashboard*/}
+        {/*GanttWise*/}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -27,16 +27,17 @@ const Projects = () => {
         >
           <div className="flex flex-col items-center justify-center w-full h-full row-span-1 text-left md:col-span-1">
             <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pl-10">
-              Inventory Dashboard
+              GanttWise
             </h1>
             <h2 className="pl-4 mr-auto text-2xl font-extrabold md:pl-10 text-light_gray_custom dark:text-dark_gray_custom">
-              Full Stack App for managing inventory data
+              Capstone Project
             </h2>
-            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-xl text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary">
+            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
               <h1>
-                Currently designing and building a functional dashboard
-                application to keep track of the inventory status of a
-                restaurant
+                Developed an AI-powered web platform using Deep Reinforcement
+                Learning to automate task scheduling and resource allocation for
+                project managers, improving project adaptability in dynamic
+                environments
               </h1>
             </div>
             <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:pb-4 text-light_gray_custom dark:text-dark_gray_custom md:pl-11">
@@ -61,7 +62,7 @@ const Projects = () => {
           </motion.div>
         </motion.div>
 
-        {/*Graphics Library*/}
+        {/*Searchington*/}
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -78,44 +79,15 @@ const Projects = () => {
           >
             <img
               className="w-auto h-40 md:h-72 object-cover"
-              src="/projectIcons/music.png"
+              src="/projectIcons/searchington.png"
               alt="icon"
             />
           </motion.div>
           <div className="flex flex-col items-center justify-center w-full h-full row-span-1 text-left md:text-right md:col-span-1">
             <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pr-10 md:ml-auto md:mr-0">
-              Jukebox
-            </h1>
-            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
-              Computer Graphics Library
-            </h2>
-            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
-              <h1>
-                Built and trained a convolutional neural network to classify
-                songs between different music genres and recommend similar
-                sounding music
-              </h1>
-            </div>
-            <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:mr-0 md:pb-4 md:ml-auto text-light_gray_custom dark:text-dark_gray_custom pr-11">
-              <h1>Python</h1>
-              <h1>PyTorch</h1>
-              <h1>TensorFlow</h1>
-            </div>
-          </div>
-        </motion.div>
-
-        {/*Searchington*/}
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.5 }}
-          className="w-full rounded-md -z-10 h-[22rem] drop-shadow-lg grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-2"
-        >
-          <div className="flex flex-col items-center justify-center w-full h-full row-span-1 text-left md:col-span-1">
-            <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pl-10">
               Searchington
             </h1>
-            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:pl-10 text-light_gray_custom dark:text-dark_gray_custom">
+            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
               Web Search Engine
             </h2>
             <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
@@ -126,10 +98,39 @@ const Projects = () => {
                 results
               </h1>
             </div>
-            <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:mt-6 md:pb-4 text-light_gray_custom dark:text-dark_gray_custom md:pl-11">
+            <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:mr-0 md:pb-4 md:ml-auto text-light_gray_custom dark:text-dark_gray_custom pr-11">
               <h1>Python</h1>
               <h1>Redis</h1>
               <h1>SQLite</h1>
+            </div>
+          </div>
+        </motion.div>
+
+        {/*Graphics Library*/}
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
+          className="w-full rounded-md -z-10 h-[22rem] drop-shadow-lg grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-2"
+        >
+          <div className="flex flex-col items-center justify-center w-full h-full row-span-1 text-left md:col-span-1">
+            <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pl-10">
+              libCG
+            </h1>
+            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:pl-10 text-light_gray_custom dark:text-dark_gray_custom">
+              Computer Graphics Library
+            </h2>
+            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
+              <h1>
+                Developed a comprehensive graphics library implementing core
+                concepts, algorithms, and techniques in computer graphics,
+                including ray casting, ray tracing, and shader pipelines.
+              </h1>
+            </div>
+            <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:mt-6 md:pb-4 text-light_gray_custom dark:text-dark_gray_custom md:pl-11">
+              <h1>C</h1>
+              <h1>C++</h1>
+              <h1>Visual Studio</h1>
             </div>
           </div>
           <motion.div
@@ -141,8 +142,8 @@ const Projects = () => {
             className="flex items-center justify-center w-full h-full row-span-1 mt-6 text-center rounded-md cursor-pointer md:mt-auto md:col-span-1 dark:bg-light_primary bg-dark_primary"
           >
             <img
-              className="w-auto h-40 md:h-72 object-cover"
-              src="/projectIcons/searchington.png"
+              className="w-auto h-40 md:h-80 object-cover"
+              src="/projectIcons/libcg.png"
               alt="icon"
             />
           </motion.div>
