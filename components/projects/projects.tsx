@@ -87,10 +87,10 @@ const Projects = () => {
             <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pr-10 md:ml-auto md:mr-0">
               Searchington
             </h1>
-            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
+            <h2 className="pl-4 mr-auto md:ml-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
               Web Search Engine
             </h2>
-            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
+            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:mr-16 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
               <h1>
                 Built a web search engine with a crawler that recursively visits
                 URLs, extracts HTML, creates word lists, and stores data in
@@ -174,10 +174,10 @@ const Projects = () => {
             <h1 className="pt-6 pb-2 pl-4 mr-auto text-4xl font-bold uppercase md:pr-10 md:ml-auto md:mr-0">
               ChromaMap
             </h1>
-            <h2 className="pl-4 mr-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
+            <h2 className="pl-4 ml-auto text-2xl font-extrabold md:mr-0 md:pr-10 text-light_gray_custom dark:text-dark_gray_custom">
               Accessibility Driven GIS Map Application
             </h2>
-            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:ml-20 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
+            <div className="z-50 text-[16px] flex items-center w-full md:p-4 pl-4 mt-3 ml-0 md:mr-16 text-left rounded-md md:shadow-md text-light_gray_custom dark:text-dark_gray_custom h-26 md:bg-light_primary md:dark:bg-dark_primary dark:md:shadow-gray-500">
               <h1>
                 Created a GIS mapping software in C++ for the visually impaired.
                 Implemented a multi-destination dijkstra algorithm to solve a
