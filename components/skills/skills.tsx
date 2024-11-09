@@ -6,7 +6,7 @@ import {
   SiTypescript,
   SiReact,
   SiRedis,
-  SiMongodb,
+  SiRust,
   SiPython,
 } from "react-icons/si";
 
@@ -136,14 +136,14 @@ const Skills = () => {
           viewport={{ once: true }}
           className="flex items-center justify-center h-24 rounded-md cursor-pointer drop-shadow-md bg-light_primary dark:bg-dark_secondary"
         >
-          <Link href="https://www.mongodb.com/">
+          <Link href="https://www.rust-lang.org/">
             <a target="_blank">
               <div className="flex-inline w-min">
-                <div className="py-1 m-auto text-5xl w-min text-mongodb_color">
-                  <SiMongodb />
+                <div className="py-1 m-auto text-5xl w-min text-rust_color">
+                  <SiRust />
                 </div>
                 <span className="m-auto font-semibold w-min md:text-xl text-dark_secondary dark:text-light_secondary">
-                  MongoDB
+                  Rust
                 </span>
               </div>
             </a>

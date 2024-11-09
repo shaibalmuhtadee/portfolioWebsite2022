@@ -124,7 +124,7 @@ const Projects = () => {
               <h1>
                 Developed a comprehensive graphics library implementing core
                 concepts, algorithms, and techniques in computer graphics,
-                including ray casting, ray tracing, and shader pipelines.
+                including ray tracing, shader pipelines, and kinematics.
               </h1>
             </div>
             <div className="flex pt-2 pb-20 pl-4 mt-auto mr-auto space-x-2 text-xl md:mt-6 md:pb-4 text-light_gray_custom dark:text-dark_gray_custom md:pl-11">

@@ -18,7 +18,7 @@ const intro = () => {
       >
         <img
           className="rounded-full w-44 h-44 md:w-52 md:h-52"
-          src="/picture.gif"
+          src="/avatar.gif"
           alt="author"
         />
       </motion.div>
